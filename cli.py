@@ -47,6 +47,13 @@ console = Console()
 DEFAULT_DOWNLOAD_OUT = Path("downloads")
 
 
+def app_dir() -> Path:
+    """Папка приложения: рядом с .exe в собранном виде, иначе — папка исходников."""
+    if getattr(sys, "frozen", False):
+        return Path(sys.executable).resolve().parent
+    return Path(__file__).resolve().parent
+
+
 # --------------------------------------------------------------------------- #
 # Печать
 # --------------------------------------------------------------------------- #
@@ -341,7 +348,7 @@ def main(argv: list[str] | None = None) -> int:
             except Exception:
                 pass
 
-    load_dotenv(Path(__file__).resolve().parent / ".env")
+    load_dotenv(app_dir() / ".env")
 
     parser = build_parser()
     args = parser.parse_args(argv)

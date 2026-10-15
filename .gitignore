@@ -8,8 +8,6 @@ env/
 __pycache__/
 *.py[cod]
 *.egg-info/
-build/
-dist/
 .pytest_cache/
 
 # результаты работы
@@ -17,3 +15,11 @@ downloads/
 converted/
 *.zip
 *.usdz
+
+# артефакты сборки (сами скрипты сборки лежат в build/ и версионируются)
+dist/
+.pyinstaller/
+build/icon-preview.png
+
+# spec-файлы PyInstaller (создаются в .pyinstaller/)
+*.spec
