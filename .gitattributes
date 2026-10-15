@@ -1,0 +1,6 @@
+# Нормализация переводов строк: LF в репозитории, CRLF только для .bat
+* text=auto eol=lf
+*.bat text eol=crlf
+*.png binary
+*.jpg binary
+*.zip binary

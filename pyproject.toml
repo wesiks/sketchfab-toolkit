@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sketchfab-toolkit"
+version = "1.0.0"
+description = "Скачивание моделей через официальный Sketchfab Data API v3 и локальная конвертация OSG.js в glTF/OBJ"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "wesiks" }]
+keywords = ["sketchfab", "gltf", "obj", "osgjs", "3d"]
+dependencies = [
+    "requests>=2.31.0",
+    "rich>=13.7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/wesiks/sketchfab-toolkit"
+
+[project.scripts]
+sketchfab-toolkit = "cli:main"
+
+[tool.setuptools]
+py-modules = ["cli", "sketchfab_api", "local_convert", "osgjs_convert"]
