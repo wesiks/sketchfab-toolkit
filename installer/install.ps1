@@ -29,7 +29,7 @@ $ErrorActionPreference = 'Stop'
 
 $AppName = 'sketchfab-toolkit'
 $Version = '1.0.0'
-$Publisher = 'wesiks'
+$Publisher = 'sketchfab-toolkit'
 
 function Say([string]$text, [string]$color = 'Gray') {
     Write-Host $text -ForegroundColor $color

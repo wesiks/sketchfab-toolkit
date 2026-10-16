@@ -13,11 +13,11 @@ VSVersionInfo(
     StringFileInfo([
       StringTable(
         '040904B0',
-        [StringStruct('CompanyName', 'wesiks'),
+        [StringStruct('CompanyName', 'sketchfab-toolkit'),
          StringStruct('FileDescription', 'sketchfab-toolkit - Sketchfab Data API v3 i konverter OSG.js'),
          StringStruct('FileVersion', '1.0.0.0'),
          StringStruct('InternalName', 'sketchfab-toolkit'),
-         StringStruct('LegalCopyright', 'MIT License, 2026 wesiks'),
+         StringStruct('LegalCopyright', 'MIT License'),
          StringStruct('OriginalFilename', 'sketchfab-toolkit.exe'),
          StringStruct('ProductName', 'sketchfab-toolkit'),
          StringStruct('ProductVersion', '1.0.0.0')])

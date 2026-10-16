@@ -28,7 +28,7 @@ from typing import Any, Callable, Optional
 import requests
 
 API_ROOT = "https://api.sketchfab.com/v3"
-USER_AGENT = "sketchfab-toolkit/1.0 (+https://github.com/wesiks/sketchfab-toolkit)"
+USER_AGENT = "sketchfab-toolkit/1.0"
 DEFAULT_TIMEOUT = 30
 CHUNK_SIZE = 256 * 1024
 
